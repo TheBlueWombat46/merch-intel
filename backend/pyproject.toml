@@ -2,10 +2,11 @@
 name = "merch-intel-backend"
 version = "0.1.0"
 description = "Merchandising Intelligence POC - API"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "fastapi>=0.115",
-    "uvicorn[standard]>=0.30",
+    # Plain uvicorn: the [standard] extra pulls pyyaml, which lacks Windows wheels on new Pythons.
+    "uvicorn>=0.30",
     "pydantic>=2.7",
     "pydantic-settings>=2.3",
     "sqlalchemy>=2.0.30",

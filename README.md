@@ -18,8 +18,9 @@ so you don't need to know Docker beyond the two commands below.
 
 1. **Install the tools** (accept defaults unless noted):
    - [Git for Windows](https://git-scm.com/download/win)
-   - [Python 3.12 or 3.13](https://www.python.org/downloads/): tick **"Add python.exe to PATH"**
-   - [Node.js 22 LTS](https://nodejs.org/)
+   - [Python 3.13](https://www.python.org/downloads/): tick **"Add python.exe to PATH"**. Must be
+     3.12 or 3.13 (newer versions lack prebuilt packages); it can be installed alongside others.
+   - [Node.js 26 LTS](https://nodejs.org/)
    - [Docker Desktop](https://www.docker.com/products/docker-desktop/): it may ask to install
      or update **WSL 2** and restart Windows; say yes. Open Docker Desktop once and wait for
      "Engine running".
